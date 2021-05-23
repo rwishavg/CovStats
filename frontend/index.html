@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> indiaVscovid</title>
   <link rel="icon" href="https://www.pat.nhs.uk/Coronavirus/images/Covid%2019%20Icon.png" type="image/x-icon">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,25 +17,26 @@
   <main>
     <section class="glass">
       <div class="dashboard">
-
+        
+        <a style ="text-decoration : none" href="https://www.pmcares.gov.in/en/web/contribution/donate_india">
         <div class="pro">
-          <h2>Join us in this battle</h2>
-          <img src="./images/controller.png" alt="" />
+          <h2>Donate for India<i class="fas fa-user-shield"></i></h2>
         </div>
+        </a>
 
         <div class="links">
 
-          <a href="index.html#Graphs">
+          <a style="text-decoration: none;" href="index.html#Graphs">
             <div class="link">
               <h2><i class="fas fa-chart-bar"></i> Graphs</h2>
             </div>
           </a>
-          <a href="#">
+          <a style="text-decoration: none;" href="#">
             <div class="link">
               <h2><i class="fab fa-chromecast"></i> Forecast</h2>
             </div>
           </a>
-          <a href="#">
+          <a style="text-decoration: none;" href="https://selfregistration.cowin.gov.in/">
             <div class="link">
               <h2><i class="fas fa-syringe"></i> Vaccine </h2>
             </div>
@@ -45,13 +45,13 @@
         </div>
 
         <div class="user">
-          <img class="images" src="./images/covid.jpg" alt="" />
+          <img class="images" src="./images/Rwishav.jpeg" alt="" />
           <h3>Rwishav Ghosh</h3>
           <p>Web Developer</p>
         </div>
 
         <div class="user">
-          <img class="images" src="./images/covid.jpg" alt="" />
+          <img class="images" src="./images/Ved.jpeg" alt="" />
           <h3>Ved Prakash Dubey</h3>
           <p>Data Scientist</p>
         </div>
@@ -74,6 +74,25 @@
             </div>
             <h2 class="percentage">60%</h2>
           </div>
+
+          <script>
+            const url = 'https://api.covid19india.org/data.json';
+            async function getData()
+            {
+              const response = await fetch(url);
+              const data = await response.json();
+              const statewise = data.statewise;
+              var total = 0;
+              statewise.map(state => {
+                console.log(state.active);
+                return total+= parseInt(state.active);
+              })
+              console.log(total);
+            }
+            getData();
+          </script>
+
+  
 
           <div class="card">
             <img class="images" src="./images/covid.jpg" alt="" />
@@ -210,6 +229,8 @@
         <h2 class="percentage">60%</h2>
       </div>
 
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div style = "margin: 10px; border-radius: 8px;"   class="elfsight-app-4ec31278-fdd2-4fd5-bbb7-5818823f28e0"></div>
 
     </div>
     </div>

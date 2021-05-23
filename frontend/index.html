@@ -17,11 +17,11 @@
   <main>
     <section class="glass">
       <div class="dashboard">
-        
-        <a style ="text-decoration : none" href="https://www.pmcares.gov.in/en/web/contribution/donate_india">
-        <div class="pro">
-          <h2>Donate for India<i class="fas fa-user-shield"></i></h2>
-        </div>
+
+        <a style="text-decoration : none" href="https://www.pmcares.gov.in/en/web/contribution/donate_india">
+          <div class="pro">
+            <h2>Donate for India<i class="fas fa-user-shield"></i></h2>
+          </div>
         </a>
 
         <div class="links">
@@ -58,80 +58,29 @@
 
       </div>
 
+      <!-- Cards to display Statistics -->
       <div class="games">
         <div class="status">
           <h1>Summary</h1>
           <input type="text" />
         </div>
 
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2 id="tested">Tested:</h2>
+            <h2 id="cases">Cases Today:</h2>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
+        </div>
+
         <div class="cards">
           <div class="card">
             <img class="images" src="./images/covid.jpg" alt="" />
             <div class="card-info">
-              <h2>Acitive Cases</h2>
-              <p>Cumulative</p>
-              <div class="progress"></div>
-            </div>
-            <h2 class="percentage">60%</h2>
-          </div>
-
-          <script>
-            const url = 'https://api.covid19india.org/data.json';
-            async function getData()
-            {
-              var Population = 1400000000;
-              const response = await fetch(url);
-              const data = await response.json();
-
-              const statewise = data.statewise;
-              const total = statewise.find(obj => obj.state=="Total");
-              
-              const test = data.tested;
-              
-              // var total_tested = 0;
-              // test.map(test =>{
-              //     if(test.totalindividualstested.length>0)
-              //       total_tested+= parseInt(test.totalindividualstested)
-              // })
-              
-              //Active Cases Percentage
-              var active_cases_perc = (parseInt(total.active)/parseInt(total.confirmed))*100;
-              console.log("Active Cases",total.active);
-              console.log("Percentage:",active_cases_perc);
-
-              //Cases Today
-              var cases_today = parseInt(total.deltaconfirmed);
-              console.log("Cases Today",total.deltaconfirmed);
-
-              //Deaths Today
-              var deaths_today = total.deltadeaths;
-              console.log("Deaths Today",deaths_today);
-
-              //Death Rate
-              var deaths_today_perc = (parseInt(total.deaths)/parseInt(total.confirmed))*100;
-              console.log("Death Rate",deaths_today_perc);
-
-              //Total Tested
-              var total_tested = parseInt(test[test.length - 1].totalsamplestested);
-              console.log("tested",total_tested);
-
-              //Vaccinations Cumulative
-              var vaccine = parseInt(test[test.length-1].totalindividualsvaccinated);
-              console.log("Vaccinated",vaccine);
-
-              //Vaccination Percentage
-              console.log("Vaccination Percentage",vaccine/140000000);
-            }
-            getData();
-          </script>
-
-  
-
-          <div class="card">
-            <img class="images" src="./images/covid.jpg" alt="" />
-            <div class="card-info">
-              <h2>New Cases</h2>
-              <p>Daily</p>
+              <h2 id="active_cases">Acitive Cases:</h2>
+              <h2 id="positivity">Positivity:</h2>
               <div class="progress"></div>
             </div>
             <h2 class="percentage">60%</h2>
@@ -140,19 +89,18 @@
           <div class="card">
             <img class="images" src="./images/covid.jpg" alt="" />
             <div class="card-info">
-              <h2>Vaccination</h2>
-              <p>Cumulative</p>
+              <h2 id="deaths_today">Deaths Today:</h2>
+              <h2 id="mortality">Death Rate:</h2>
               <div class="progress"></div>
             </div>
             <h2 class="percentage">60%</h2>
           </div>
 
-
           <div class="card">
             <img class="images" src="./images/covid.jpg" alt="" />
             <div class="card-info">
-              <h2>Vaccination</h2>
-              <p>Daily</p>
+              <h2 id="vaccination_total">Vaccination:</h2>
+              <h2 id="vaccine_perc">percentage:</h2>
               <div class="progress"></div>
             </div>
             <h2 class="percentage">60%</h2>
@@ -162,17 +110,17 @@
       </div>
     </section>
 
-      <!-- SECOND MAIN CARD -->
+    <!-- SECOND MAIN CARD -->
     <div class="glass" id="footer">
       <div class="games">
-      <div class="status">
-        <h1>Graphs:</h1>
-        <input type="text" />
-      </div>
-      <a name="Graphs"></a>
-      <iframe 
-        src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&region=Asia&hideControls=true&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Align+outbreaks=false&country=~OWID_WRL"
-        loading="fast" style="margin:0px; width: 100%; height: 600px; border: 0px;border-radius: 8px;"></iframe>
+        <div class="status">
+          <h1>Graphs:</h1>
+          <input type="text" />
+        </div>
+        <a name="Graphs"></a>
+        <iframe
+          src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&region=Asia&hideControls=true&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Align+outbreaks=false&country=~OWID_WRL"
+          loading="fast" style="margin:0px; width: 100%; height: 600px; border: 0px;border-radius: 8px;"></iframe>
 
         <br>
         <br>
@@ -180,93 +128,89 @@
           src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&region=Asia&hideControls=true&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Align+outbreaks=false&country=~IND"
           loading="fast" style="margin:0px; width: 100%; height: 600px; border: 0px;border-radius: 8px;"></iframe>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
-      </div>
 
-      <div class="card">
-        <img class="images" src="./images/covid.jpg" alt="" />
-        <div class="card-info">
-          <h2>Vaccination</h2>
-          <p>Cumulative</p>
-          <div class="progress"></div>
+        <div class="card">
+          <img class="images" src="./images/covid.jpg" alt="" />
+          <div class="card-info">
+            <h2>Vaccination</h2>
+            <p>Cumulative</p>
+            <div class="progress"></div>
+          </div>
+          <h2 class="percentage">60%</h2>
         </div>
-        <h2 class="percentage">60%</h2>
       </div>
-
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div style = "margin: 10px; border-radius: 8px;"   class="elfsight-app-4ec31278-fdd2-4fd5-bbb7-5818823f28e0"></div>
-
-    </div>
-    </div>
   </main>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

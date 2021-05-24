@@ -151,9 +151,24 @@ main {
   justify-content: space-between;
 }
 
+.card2{
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(186, 244, 251, 0.8),
+    rgba(255, 255, 255, 0.726));
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .card-info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  align-content: flex-start;
 }

@@ -4,7 +4,7 @@ var deaths_today_perc;
 var vaccine_perc;
 
 async function getData(callback) {
-    var Population = 1400000000;
+    var Population = 14000000000;
     const response = await fetch(url);
     const data = await response.json();
 
@@ -36,7 +36,7 @@ async function getData(callback) {
 
     console.log(active_cases_perc);
     console.log(deaths_today_perc);
-    console.log(vaccine / 140000000);
+    console.log(vaccine_perc);
    
     //Updating HTML
     document.getElementById("date").innerHTML = time;
@@ -57,13 +57,13 @@ async function getData(callback) {
     vaccine_perc = vaccine_perc.toFixed(2);
     document.getElementById("vaccine_perc").innerHTML = vaccine_perc+"%";
 
+    console.log(vaccine);
 
     callback();
 }
 getData(move);
 
 function move() {
-    console.log("Hello");
     var elem1 = document.getElementById("bar1");
     var elem2 = document.getElementById("bar2");
     var elem3 = document.getElementById("bar3");

@@ -8,6 +8,25 @@
   margin-top: 30px;
   display:block;
 }
+
+#footer2{
+  margin-top: 30px;
+  display:block;
+  margin: 20px;
+  background: white;
+  min-height: 80vh;
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
 .fas,.fab{
   text-decoration: none;
   padding:10px;

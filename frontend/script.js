@@ -6,9 +6,9 @@ async function getData() {
 
     const statewise = data.statewise;
     const total = statewise.find(obj => obj.state == "Total");
-
+    const time = total.lastupdatedtime;
     const test = data.tested;
-
+    console.log("Time",time);
     // var total_tested = 0;
     // test.map(test =>{
     //     if(test.totalindividualstested.length>0)
@@ -22,7 +22,7 @@ async function getData() {
 
     //Cases Today
     var cases_today = parseInt(total.deltaconfirmed);
-    console.log("Cases Today", total.deltaconfirmed);
+    console.log("Cases Today", cases_today);
 
     //Deaths Today
     var deaths_today = total.deltadeaths;
@@ -42,5 +42,19 @@ async function getData() {
 
     //Vaccination Percentage
     console.log("Vaccination Percentage", vaccine / 140000000);
+
+
+    
+    document.getElementById("tested").innerHTML = total_tested;
+    document.getElementById("cases").innerHTML = cases_today;
+
+    document.getElementById("active_cases").innerHTML = parseInt(total.active);
+    document.getElementById("positivity").innerHTML = active_cases_perc;
+
+    document.getElementById("deaths").innerHTML = deaths_today;
+    document.getElementById("mortality").innerHTML = deaths_today_perc;
+
+    document.getElementById("vaccination_total").innerHTML = vaccine;
+    document.getElementById("vaccine_perc").innerHTML = (vaccine / 140000000);
 }
 getData();

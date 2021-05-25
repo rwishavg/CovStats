@@ -29,18 +29,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://rwishavg/COVID-19-and-India">
+  <a href="https://rwishavg.github.io/COVID-19-and-India/frontend/index.html">
     <img align="center" src="images/20210524_200625_0000.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">COVID19 & India</h3>
+  <h3 align="center">COVID-19 & India</h3>
 
   <p align="center">
     An Analytical and Interactive Approach
+    <h3 align="center">Dashboard is Not compatible with Chrome</h3>
     <br />
     <a href="https://youtu.be/BTZSivNDwPM">View Demo</a>
     ·
-    <a href="https://github.com/https:/rwishavg/COVID-19-and-India/issues">Report Bug</a>
+    <a href="https://github.com/rwishavg/COVID-19-and-India/issues">Report Bug</a>
     ·
     <a href="https://github.com/rwishavg/COVID-19-and-India/issues">Request Feature</a>
   </p>

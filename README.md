@@ -131,6 +131,7 @@ To get a local copy up and running follow these simple steps.
 2. Displaying Covid statistics that update in real time by reading from API's.
 3. Building a RASA chatbot by training it on custom interaction and also enabling it to update the user with location specific pandemic statistics.
 
+### What it Looks Like
 ![1](./images/Screenshot1_COVID19vsIndia.png)
 
 ![2](./images/Screenshot2_COVID19vsIndia.png)

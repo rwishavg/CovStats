@@ -57,8 +57,6 @@
 The recent surge in cases of covid-19 due to the second wave of the pandemic has created a crisis within the country. This calls for an analysis of how we've been handling the initial wave, how we are doing currently and what we can potentially do in the future. It is also important to make this information accessible to the people and that is what we aim to achieve with this project. 
 
 
-<img src="./images/Webp.net-gifmaker (2).gif" width="300" height="300" style="vertical-align:middle;margin:0px 150px"/>
-
 
 ## Tech Stack
 

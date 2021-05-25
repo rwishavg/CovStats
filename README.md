@@ -1,7 +1,7 @@
 # Covid-19-Dashboard
 
 <h2>Click on the given link to see website:</h2>
-<h3>https://rwishavg.github.io/Covid-19-Dashboard/frontend/index.html</h3>
+<h3>https://rwishavg.github.io/COVID-19-and-India/frontend/index.html</h3>
 
 <h2>Click on the given link to see presentation:</h2>
 <h3>https://drive.google.com/file/d/1-oQ0fuWZSxi80-nqGoHrtOlIFMnCeLCh/view?usp=sharing</h3>
@@ -23,5 +23,6 @@
 <p>Elastic</p>
 <p>Flask</p>
 <p>Rasa</p>
+
 
 

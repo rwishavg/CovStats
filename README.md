@@ -1,6 +1,6 @@
 # Covid-19-Dashboard
 
-<h2>Click on the given link to see website:</h2>
+<h2>Click on the given link to see what it looks like:</h2>
 <h3>https://rwishavg.github.io/COVID-19-and-India/frontend/index.html</h3>
 
 <h2>Click on the given link to see presentation:</h2>
@@ -10,7 +10,7 @@
 <p>Chrome is not compatible with Elastic Kibana</p>
 
 <h2>What?</h2>
-<h3>A Data Science Project to visualise and predict India's fight against Covid-19</h3>
+<h3>A Data Science Web App to visualise and predict India's fight against Covid-19</h3>
 
 <h2>Why?</h2>
 <h3>The recent surge in cases of covid-19 due to the second wave of the pandemic has created a crisis within the country. This calls for an analysis of how we've been handling the initial wave, how we are doing currently and what we can potentially do in the future. It is also important to make this information accessible to the people and that is what we aim to do.</h3>

@@ -1,0 +1,40 @@
+version: "2.0"
+
+stories:
+
+
+
+- story: actual path 
+  steps: 
+  - intent: greet
+  - action: action_get_entity
+  - intent: name_entry
+  - action: action_get_entity
+  - intent: corona_stats_check
+  - action: action_know_whether_previous_calculated
+  - intent: corona_states_stat
+  - action: actions_corona_state_stat
+
+
+- story: actual path 1
+  steps: 
+  - intent: greet
+  - action: action_get_entity
+  - intent: corona_stats_check
+  - action: action_know_whether_previous_calculated
+  - intent: affirm
+  - action: actions_corona_state_stat
+
+
+
+- story: actual path 2
+  steps: 
+  - intent: greet
+  - action: action_get_entity
+  - intent: corona_stats_check
+  - action: action_know_whether_previous_calculated
+  - intent: deny
+  - action: actions_corona_state_stat 
+
+
+

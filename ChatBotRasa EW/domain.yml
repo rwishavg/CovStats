@@ -1,0 +1,66 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_states_stat
+  - name_entry
+  - location_entry
+  - corona_stats_check
+  - Thanks
+
+
+actions:
+  - actions_corona_state_stat
+  - actions_name_show
+  - action_hello_world_action_test
+  - action_get_entity
+  - action_know_whether_previous_calculated
+  
+  
+entities:
+  - name
+  - state
+  - pincode
+
+
+
+slots:
+  name:
+    type: unfeaturized
+  state:
+    type: unfeaturized
+  pincode:
+    type: unfeaturized
+  
+
+
+
+
+responses:
+  
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+
+  utter_happy:
+  - text: "Wow! I am glad to know that"
+
+  utter_goodbye:
+  - text: "GoodBye! Hope To See You Soon !:))"
+
+  utter_iamabot:
+  - text: "I am a COVID-19 Stats bot\n"
+
+  utter_Thanks:
+  - text: "Your Welcome . Glad I could be of some help!:))"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

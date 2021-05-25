@@ -1,0 +1,325 @@
+version: "2.0"
+
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+- intent: mood_great
+  examples: |
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - happy
+    - very happy
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - who are you
+    - what are you
+    - tell me about yourself?
+    - tell me about yourself
+    - what are you?
+
+
+- intent: corona_stats_check
+  examples: |
+    - Corona stats
+    - i want to check corona statistics
+    - corona tracker
+    - corona stats
+    - covid tracker
+    - covid stats
+    - corona
+    - covid 
+    - tell me about corona cases
+    - tell me about covid cases
+    - what are the covid cases today
+    - what are the corona cases today
+    - What is the status of covid today
+    - What is the status of corona today
+    - i want to know about corona statistics
+    - i want to know about covid-19 statistics
+    - i want to know about covid stats
+    - i want to know about corona stats
+    - covid status
+    - covid cases near me
+    - covid-19 status
+    - covid-19 cases near me
+    - current pandemic situation
+    - I want to know corona virus situation 
+    - Show me covid stats
+    - Covid Counts
+
+
+- intent: corona_states_stat
+  examples: |
+    - I want to know about [India](state)
+    - I want to know about corona [India](state)
+    - Tell me about [India](state)
+    - I want to know about [Gujarat](state)
+    - Tell me about [gujarat](state)
+    - I want to know about Corona [Gujarat](state)
+    - I want to know about [Andhra Pradesh](state)
+    - Tell me about [Andhra Pradesh](state)
+    - I want to know about [Arunachal Pradesh](state)
+    - Tell me about [Arunachal Pradesh](state)
+    - I want to know about [Assam](state)
+    - Tell me about [Assam](state)
+    - I want to know about [Bihar](state)
+    - Tell me about [Bihar](state)
+    - I want to know about [Goa](state)
+    - Tell me about [Goa](state)
+    - I want to know about [Chhattisgarh](state)
+    - Tell me about [Chhattisgarh](state)
+    - I want to know about [Haryana](state)
+    - Tell me about [Haryana](state)
+    - I want to know about [Himachal Pradesh](state)
+    - Tell me about [Himachal Pradesh](state)
+    - I want to know about [Jharkhand](state)
+    - Tell me about [Jharkhand](state)
+    - I want to know about [Karnataka](state)
+    - Tell me about [karnataka](state)
+    - I want to know about [Madhya Pradesh](state)
+    - Tell me about [Madhya Pradesh](state)
+    - I want to know about [Kerala](state)
+    - Tell me about [kerala](state)
+    - I want to know about [Maharashtra](state)
+    - Tell me about [Maharashtra](state)
+    - I want to know about [Manipur](state)
+    - Tell me about [Manipur](state)
+    - I want to know about [Meghalaya](state)
+    - Tell me about [Meghalaya](state)
+    - I want to know about [Mizoram](state)
+    - Tell me about [Mizoram](state)
+    - I want to know about [Nagaland](state)
+    - Tell me about [Nagaland](state)
+    - I want to know about [Odisha](state)
+    - Tell me about [Odisha](state)
+    - I want to know about [Punjab](state)
+    - Tell me about [punjab](state)
+    - I want to know about [Rajasthan](state)
+    - Tell me about [rajasthan](state)
+    - I want to know about [Jammu and Kashmir](state)
+    - Tell me about [Jammu and Kashmir](state)
+    - I want to know about [Sikkim](state)
+    - Tell me about [sikkim](state)
+    - I want to know about [Tamil Nadu](state)
+    - Tell me about [Tamil Nadu](state)
+    - I want to know about [Telangana](state)
+    - Tell me about [telangana](state)
+    - I want to know about [Tripura](state)
+    - Tell me about [Tripura](state)
+    - I want to know about [Uttar Pradesh](state)
+    - Tell me about [Uttar Pradesh](state)
+    - I want to know about [Uttarakhand](state)
+    - Tell me about [Uttarakhand](state)
+    - I want to know about [West Bengal](state)
+    - Tell me about [West Bengal](state)
+    - I want to know about [Delhi](state)
+    - Tell me about [Delhi](state)
+    - Tell me about [123456](pincode)
+    - Tell me about [987543](pincode)
+    - Tell me about [963109](pincode)
+    - I want to know about [904930](pincode)
+    - I want to know about [493953](pincode)
+    - I want to know about [543453](pincode)
+    - I want to know about [564464](pincode)
+    - I want to know about [334343](pincode)
+    - [Vishakhapatnam](state)
+    - [Raipur](state)
+    - [Ranchi](state)
+    - [Jamshedpur](state)
+    - [Patratu](state)
+    - [dsjfdsdj](state)
+    - [Port Blair](state)
+    - [Madhya Pradesh](state)
+    - [Nainital](state)
+    - [Bistupur](state)
+    - [bagalkote](state)
+    - [belagavi](state)
+    - [bellary](state)
+    - [gadag](state)
+    - [hassan](state)
+    - [gulbarga](state)
+    - [dharwad](state)
+    - [haveri](state)
+    - [kolar](state)
+    - [thane](state)
+    - [pune](state)
+    - [satara](state)
+    - [sangli](state)
+    - [solapur](state)
+    - [usman](state)
+
+    
+- intent: name_entry
+  examples: |
+    - My name is [Ashish](name)
+    - [ashish](name) this side
+    - [praveen](name) this side
+    - [Aditya](name) this side
+    - [Shivani](name) this side
+    - [Rahul](name) this side
+    - [Akshay](name) this side
+    - It's [ashish](name)
+    - It's [Praveen](name)
+    - It's [Aditya](name)
+    - It's [Kanchan](name)
+    - It's [Divya](name)
+    - [ashish](name) is my name
+    - My name is [Harsh](name)
+    - [harsh](name) this side
+    - It's [harsh](name)
+    - It is [Tom](name)
+    - It is [shubham](name)
+    - It is [krishna](name)
+    - It is [hari](name)
+    - It is [madhusudan](name)
+    - It is [himanshu](name)
+    - It is [shivani](name)
+    - It is [divya](name)
+    - It is [praveen](name)
+    - It is [aditya](name)
+    - My name is [Bob](name)
+    - my name is [Harsh](name)
+    - name is [Rajesh](name)
+    - my name is [demo](name)
+    - my name is [praveen](name)
+    - My name is [Shubham](name)
+    - my name is [aditya](name)
+    - my name is [kirushanth](name)
+    - my name is [Madhusudan](name)
+    - my name is [akshay](name)
+    - my name is [tarique](name)
+    - My name is [divya](name)
+    - my name is [Kanchan](name)
+    - name is [demo](name)
+    - name is [shubham](name)
+    - name is [divya](name)
+    - name is [kanchan](name)
+    - name is [praveen](name)
+    - name is [aditya](name)
+    - name is [kirushanth](name)
+    - name is [phaneendra](name)
+    - name is [amit](name)
+    - name is [rishi](name)
+    - name is [rajeev](name)
+    - name is [vinita](name)
+    - name is [sanu](name)
+    - I am [Harsh](name)
+    - I am [Nandan](name)
+    - I am [demo](name)
+    - I am [shubham](name)
+    - I am [divya](name)
+    - I am [praveen](name)
+    - I am [mahima](name)  
+    - I am [shivani](name)
+    - I am [aditya](name)
+    - I am [manoj](name)
+    - I am [kirushanth](name)
+    - I am [rahul](name)
+    - I am [kanchan](name)
+    - I am [sankalp](name)
+    - myself [Harsh](name)
+    - myself [shubham](name)
+    - myself [divya](name)
+    - myself [kirushanth](name)
+    - myself [mahima](name)
+    - myself [praveen](name)
+    - myself [kanchan](name)
+    - myself [manoj](name)
+    - myself [aditya](name)
+    - myself [rahul](name)
+    - myself [madhusudan](name)
+    - myself [akshay](name)
+    - myself [iti](name)
+    - myself [john](name)
+    - myself [Phaneendra](name)
+- intent: Thanks
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot 
+    - thank you so much
+
+- regex: pincode
+  examples: |
+    - \d{6}
+
+- regex: state
+  examples: |
+    - ^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$
+
+- regex: name
+  examples: |
+    - /^[a-z ,.'-]+$/i

@@ -1,0 +1,43 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: show picture anytime user is sad
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- rule: reply I am very happy to hear that when user is happy
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- rule: who am i
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: thanks path
+  steps:
+  - intent: Thanks
+  - action: utter_Thanks
+
+- rule: thanks path
+  steps:
+  - intent: Thanks
+  - action: utter_Thanks
+
+- rule: who am i
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

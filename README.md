@@ -29,8 +29,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://rwishavg/indiaVScovid">
-    <img src="images/20210524_200625_0000.png" alt="Logo" width="100" height="100">
+  <a href="https://rwishavg/COVID-19-and-India">
+    <img align="center" src="images/20210524_200625_0000.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">COVID19 & India</h3>
@@ -40,9 +40,9 @@
     <br />
     <a href="https://youtu.be/BTZSivNDwPM">View Demo</a>
     ·
-    <a href="https://github.com/https:/rwishavg/indiaVScovid/issues">Report Bug</a>
+    <a href="https://github.com/https:/rwishavg/COVID-19-and-India/issues">Report Bug</a>
     ·
-    <a href="https://github.com/rwishavg/indiaVScovid/issues">Request Feature</a>
+    <a href="https://github.com/rwishavg/COVID-19-and-India/issues">Request Feature</a>
   </p>
 </p>
 
@@ -167,7 +167,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/rwishavg/COV
 
 [Ved Prakash Dubey](https://www.linkedin.com/in/ved-prakash-dubey-swash/) - Linkedin
 
-[Rwishav Ghosh](https://www.linkedin.com/in/ved-prakash-dubey-swash/) - Linkedin
+[Rwishav Ghosh](https://rwishavg.github.io/portfolio/) - Portfolio
 
 
 

@@ -59,6 +59,27 @@ async function getData(callback) {
 
     console.log(vaccine);
 
+    //Summary:
+    document.getElementById("v1").innerHTML = parseInt(test[test.length - 1].updatetimestamp);
+    
+    document.getElementById("v2").innerHTML = parseInt(total.confirmed);
+    document.getElementById("v3").innerHTML = parseInt(total.active);
+
+    document.getElementById("v4").innerHTML = parseInt(total.recovered);
+    document.getElementById("v5").innerHTML = parseInt(total.deltarecovered);
+
+    document.getElementById("v6").innerHTML = parseInt(total.deaths);
+    document.getElementById("v7").innerHTML = deaths_today;
+    
+    document.getElementById("v8").innerHTML = parseInt(test[test.length - 1].totalrtpcrsamplescollectedicmrapplication);
+    document.getElementById("v9").innerHTML = parseInt(test[test.length - 1].dailyrtpcrsamplescollectedicmrapplication);
+    document.getElementById("v10").innerHTML = total_tested;
+    
+    document.getElementById("v11").innerHTML = parseInt(test[test.length - 1].totalindividualsregistered);
+    document.getElementById("v12").innerHTML = parseInt(test[test.length - 1].totalindividualsvaccinated);
+    document.getElementById("v13").innerHTML = parseInt(test[test.length - 1].firstdoseadministered);
+    document.getElementById("v14").innerHTML = parseInt(test[test.length - 1].seconddoseadministered);
+    
     callback();
 }
 getData(move);

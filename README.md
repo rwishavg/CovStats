@@ -31,13 +31,12 @@
 <p align="center">
   <a href="https://rwishavg.github.io/COVID-19-and-India/frontend/index.html">
     <img align="center" src="images/20210524_200625_0000.png" alt="Logo" width="100" height="100">
+    <h3 align="center">COVID-19 & India</h3>
+    <h3 align="center">Dashboard is Not compatible with Chrome</h3>
+    <h3 align="center">----------------------------------------</h3>
   </a>
-
-  <h3 align="center">COVID-19 & India</h3>
-
   <p align="center">
     An Analytical and Interactive Approach
-    <h3 align="center">Dashboard is Not compatible with Chrome</h3>
     <br />
     <a href="https://youtu.be/BTZSivNDwPM">View Demo</a>
     ·

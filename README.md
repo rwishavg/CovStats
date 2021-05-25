@@ -1,16 +1,18 @@
 # Covid-19-Dashboard
 
-<h1>Click on the given link to see website</h1>
-<h2>https://rwishavg.github.io/Covid-19-Dashboard/frontend/index.html</h2>
-<h2>Kibana Dashboard Will Not Work on Chrome!!!</h2>
+<h2>Click on the given link to see website</h2>
+<h3>https://rwishavg.github.io/Covid-19-Dashboard/frontend/index.html</h3>
+<h3>ALERT : Kibana Dashboard Will Not Work on Chrome!!!</h2>
+<p>Chrome is not compatible with Elastic Kibana</p>
 
 #A Data Science Project to visualise and predict India's fight against Covid-19
 
-<h1>Fight Against Covid</h1>
-<h2>Technologies Used:</h2>
+<h2>Fight Against Covid</h2>
+<h3>Technologies Used:</h3>
 
 <p>Elastic</p>
-
+<p>Flask</p>
+<p>Rasa</p>
 
 <p>Here is the images:</p>
 

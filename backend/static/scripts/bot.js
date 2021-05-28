@@ -11,8 +11,10 @@
                     initPayload: '/greet',
                     customData: { language: "en" },
                     socketUrl: "http://localhost:5005",
-                    title: 'COVID19vsIndia StatAssistant'
+                    title: 'COVID19vsIndia StatAssistant',
+                    storage: "session"
                     // add other props here
+
                 },
                 null
             );

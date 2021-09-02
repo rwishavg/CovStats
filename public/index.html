@@ -20,51 +20,38 @@
     <section class="glass">
       <div class="dashboard">
 
-        <a style="text-decoration : none" href="https://www.pmcares.gov.in/en/web/contribution/donate_india">
-          <div  >
-            <img class="logo" src="./images/logo.png" alt="">
-            <div class="pro">
-            <h2>Donate for India<i class="fas fa-user-shield"></i></h2>
-          </div>
-          </div>
-        </a>
-<br>
-<br>
-<br>
+   <header>
+    <a  href="https://www.pmcares.gov.in/en/web/contribution/donate_india">
+      <div  >
+        <img class="logo" src="./images/logo.png" alt="">
+        <button class="pro flex-aligned ">
+        Donate for India<i class="fas fa-user-shield"></i>
+      </button>
+      </div>
+    </a>
+   </header>
 
 
-        <div class="links">
+        <div class="link-section">
 
-          <a style="text-decoration: none;" href="index.html#Graphs">
-            <div class="link">
-              <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><i class="fas fa-chart-bar"></i> Dashboard</h2>
-            </div>
+          <a  href="index.html#Graphs" class="link-item">
+           <i class="fas fa-chart-bar"></i> Dashboard
           </a>
-          <a style="text-decoration: none;" href="bot.html">
-            <div class="link">
-              <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><i class="fas fa-robot"></i> Chatbot</h2>
-            </div>
+
+          <a href="bot.html" class="link-item">
+            <i class="fas fa-robot"></i> Chatbot 
           </a>
-          <a style="text-decoration: none;" href="https://selfregistration.cowin.gov.in/">
-            <div class="link">
-              <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><i class="fas fa-syringe"></i> Vaccine </h2>
-            </div>
+
+          <a  href="https://selfregistration.cowin.gov.in/" class="link-item"> 
+            <i class="fas fa-syringe"></i> Vaccine 
           </a>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
         </div>
 
-        <a style="text-decoration: none;" href="https://rwishavg.github.io/portfolio/">
+     <div class="profile-section flex-aligned">
+
+      <a href="https://rwishavg.github.io/portfolio/">
         <div class="user">
           <img class="images" src="./images/Rwishav.jpeg" alt="" />
           <h3>Rwishav Ghosh</h3>
@@ -79,11 +66,13 @@
           <p>Data Scientist</p>
         </div>
         </a>
+     </div>
+
       </div>
 
       <div class="games">
         <div class="status">
-          <h1 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Statistics:</h1>
+          <h1 >Statistics:</h1>
           
         </div>
     
@@ -91,7 +80,7 @@
         <div class="card">
           <img class="images" src="./images/testing.png" alt="" />
           <div class="card-info">
-            <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Total Tests :</h2>
+            <h2 class="stats-heading">Total Tests :</h2>
             <h2> <p id="tested"></p></h2>
         </div>
         </div>
@@ -100,7 +89,7 @@
           <div class="card">
             <img class="images" src="./images/cases.jpg" alt="" />
             <div class="card-info">
-              <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">New Cases Today :</h2>
+              <h2 class="stats-heading">New Cases Today :</h2>
              <h2> <p id="cases"></p></h2>
             </div>
           </div>
@@ -109,7 +98,7 @@
             <div class="card">
               <img class="images" src="./images/date.png" alt="" />
               <div class="card-info">
-                <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Updated :</h2>
+                <h2 class="stats-heading" >Updated :</h2>
                 <h2><p id="date"></p></h2>
               </div>
             </div>
@@ -121,11 +110,11 @@
           <div class="card">
             <img class="images" src="./images/covid.png" alt="" />
             <div class="card-info">
-              <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Active Cases :</h2>
+              <h2 class="stats-heading">Active Cases :</h2>
               <h2><p id="active_cases"></p></h2>
             </div>
           </div>
-          <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Percentage of Population +ve :</h2>
+          <h2 class="stats-heading">Percentage of Population +ve :</h2>
                  
                   <div class="w3-light-grey w3-round-xlarge" style="width: 80%;">
                   <div id="bar1" class="w3-container w3-blue w3-round-xlarge" style="width:0;display: flex;flex-direction: row;align-items: center;"><p id="positivity" style="color: black;"></p></div>
@@ -139,16 +128,16 @@
           <div class="card">
             <img class="images" src="./images/death.jpg" alt="" />
             <div class="card-info">
-              <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Deaths Today :</h2>
+              <h2 class="stats-heading">Deaths Today :</h2>
               <h2><p id="deaths"></p></h2>
           </div>
           
           </div>
-          <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Percentage of Affected Deceased :</h2>
+          <h2 class="stats-heading">Percentage of Affected Deceased :</h2>
 
     
               <div class="w3-light-grey w3-round-xlarge" style="width: 80%;">
-              <div id="bar2" class="w3-container w3-blue w3-round-xlarge" style="width:0;display: flex;flex-direction: row;"><p id="mortality" style="color: black;"></p></div>              
+              <div id="bar2" class="w4-container w3-blue w3-round-xlarge"><p id="mortality" style="color: black;"></p></div>              
       </div>
       </div>
 
@@ -156,13 +145,13 @@
           <div class="card">
             <img class="images" src="./images/vaccine.png" alt="" />
             <div class="card-info">
-              <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Vaccinations :</h2>
+              <h2 class="stats-heading">Vaccinations :</h2>
               <h2><p id="vaccination_total"></p></h2>
             </div>
             </div>
-            <h2 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Percentage Vaccinated :</h2>
+            <h2 class="stats-heading">Percentage Vaccinated :</h2>
               <div class="w3-light-grey w3-round-xlarge" style="width: 80%;">
-              <div id="bar3" class="w3-container w3-blue w3-round-xlarge" style="width:0;display: flex;flex-direction: row;"><p id="vaccine_perc" style="color: black;"></p></div>
+              <div id="bar3" class="w3-container w3-blue w3-round-xlarge" ><p id="vaccine_perc" style="color: black;"></p></div>
           </div>
       </div>
       </div>

@@ -3,25 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-#footer{
-  margin-top: 30px;
-  display:block;
+a {
+  text-decoration: none;
 }
 
-.logo{
-  margin:32px;
+/* general styles */
+.flex-aligned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#footer {
+  margin-top: 30px;
+  display: block;
+}
+
+.logo {
+  margin: 15px 25px;
   height: 250px;
   width: 250px;
   border-radius: 12px;
 }
 
-.fas,.fab{
+.fas,
+.fab {
   text-decoration: none;
-  padding:10px;
+  padding: 10px;
 }
-.images{
-  margin:0px;
+.images {
+  margin: 0px;
   height: 100px;
   width: 100px;
   padding: 0px;
@@ -46,6 +57,9 @@ h3 {
   opacity: 0.8;
 }
 
+.stats-heading {
+  font-size: 1.5rem;
+}
 main {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -60,7 +74,7 @@ main {
   margin: 20px;
   background: white;
   min-height: 80vh;
-  width: 60%;
+  width: 80%;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
@@ -75,9 +89,9 @@ main {
 .dashboard {
   flex: 1;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   text-align: center;
   background: linear-gradient(
     to right bottom,
@@ -85,40 +99,48 @@ main {
     rgba(255, 255, 255, 0.3)
   );
   border-radius: 2rem;
+  width: 40%;
 }
-.link {
-  text-decoration: none;
+
+.link-section {
+  margin: 4rem 0;
   display: flex;
-  margin: 2rem 0rem;
-  padding: 1rem 5rem;
-  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
-.link h2 {
+.link-item {
   text-decoration: none;
   padding: 0rem 2rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #3aa6d8;
+  font-weight: 600;
+}
+
+.profile-section {
+  gap: 2rem;
 }
 
 .games {
   flex: 2;
+  width: 60%;
 }
 
 .pro {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 2rem;
   color: white;
-  padding: 1rem;
+  height: 3.2rem;
   position: relative;
+  border: transparent;
+  width: 18.3rem;
+  font-size: 1.5rem;
 }
 
 .pro img {
   position: absolute;
   top: -10%;
   right: 10%;
-}
-.pro h2 {
-  width: 100%;
-  color: white;
-  font-weight: 600;
 }
 
 /* GAMES */
@@ -147,10 +169,12 @@ main {
 
 .card {
   display: flex;
+  align-items: center;
   background: linear-gradient(
     to left top,
     rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.5));
+    rgba(255, 255, 255, 0.5)
+  );
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 2rem;
@@ -158,12 +182,13 @@ main {
   justify-content: space-between;
 }
 
-.card2{
+.card2 {
   display: flex;
   background: linear-gradient(
     to left top,
     rgba(186, 244, 251, 0.8),
-    rgba(255, 255, 255, 0.726));
+    rgba(255, 255, 255, 0.726)
+  );
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 2rem;
@@ -179,10 +204,6 @@ main {
   align-items: center;
   align-content: flex-start;
 }
-
-
-
-
 
 .meter {
   box-sizing: content-box;
@@ -211,4 +232,34 @@ main {
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
-} 
+}
+.w3-container {
+  width: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1050px) {
+  .glass {
+    flex-wrap: wrap;
+  }
+  .stats-heading {
+    font-size: 1.1rem;
+  }
+  .images {
+    height: 50px;
+    width: 50px;
+  }
+  .link-section {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-section {
+    flex-direction: column;
+  }
+  .link-section {
+    gap: 1rem;
+  }
+}

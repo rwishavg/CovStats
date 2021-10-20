@@ -1,0 +1,25 @@
+{
+  "name": "covid19vsworld",
+  "version": "1.0.0",
+  "description": "A webapp to track covid 19 cases worldwide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwishavg/COVID-19-and-India.git"
+  },
+  "keywords": [
+    "React",
+    "Node",
+    "Rasa",
+    "ML"
+  ],
+  "author": "Rwishav Ghosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rwishavg/COVID-19-and-India/issues"
+  },
+  "homepage": "https://github.com/rwishavg/COVID-19-and-India#readme"
+}

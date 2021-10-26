@@ -55,7 +55,6 @@ The frontend has been recently refactored to ReactJS. We are having difficulty d
 ## Tech Stack
 * [ReactJS](https://reactjs.org/)
 * [Elasticsearch and Kibana](https://www.elastic.co/)
-* [HTML5, CSS3, Javascript](https://www.w3schools.com/html/html_scripts.asp)
 * [Flask](https://flask-doc.readthedocs.io/en/latest/)
 * [RASA-NLU Chatbot](https://rasa.com/docs/)
 * [Firebase Hosting](https://firebase.google.com/)
@@ -130,11 +129,15 @@ To get a local copy up and running follow these simple steps.
 
 ### What it Looks Like
 
-<img align="center" src="Images/Screenshot1.png" alt="Logo" width="100" height="100">
+```Screenshot 1```
+
+<img align="center" src="Images/Screenshot1.png" alt="Logo">
 
 <br/>
 
-<img align="center" src="Images/Screenshot2.png" alt="Logo" width="100" height="100">
+```Screenshot 2```
+
+<img align="center" src="Images/Screenshot2.png" alt="Logo">
 
 <br/>
 

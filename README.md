@@ -24,14 +24,12 @@
 [![Forks][forks-shield]][forks-url]
 
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://india-vs-covid.web.app/">
-    <img align="center" src="images/20210524_200625_0000.png" alt="Logo" width="100" height="100">
-    <h2 align="center">COVID-19 & India</h2>
+    <img align="center" src="Images/Logo.png" alt="Logo" width="100" height="100">
+    <h2 align="center">COVID-19 & World</h2>
     <h3 align="center">----------------------------------------</h3>
   </a>
   <p align="center">
@@ -45,23 +43,26 @@
   </p>
 </p>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 The recent surge in cases of covid-19 due to the second wave of the pandemic has created a crisis within the country. This calls for an analysis of how we've been handling the initial wave, how we are doing currently and what we can potentially do in the future. It is also important to make this information accessible to the people and that is what we aim to achieve with this project. 
 
+## Note :
 
+The frontend has been recently refactored to ReactJS. We are having difficulty deploying the Rasa Chatbot to servers. We have also exhausted the trial period of Elastic services. We apologise for the same and are working on resolving it as soon as possible
 
 ## Tech Stack
-
+* [ReactJS](https://reactjs.org/)
 * [Elasticsearch and Kibana](https://www.elastic.co/)
 * [HTML5, CSS3, Javascript](https://www.w3schools.com/html/html_scripts.asp)
 * [Flask](https://flask-doc.readthedocs.io/en/latest/)
 * [RASA-NLU Chatbot](https://rasa.com/docs/)
+* [Firebase Hosting](https://firebase.google.com/)
 
+## Project Design :
 
+<img align="center" src="Images/Design.png" alt="Logo">
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -128,6 +129,15 @@ To get a local copy up and running follow these simple steps.
 3. Building a RASA chatbot by training it on custom interaction and also enabling it to update the user with location specific pandemic statistics.
 
 ### What it Looks Like
+
+<img align="center" src="Images/Screenshot1.png" alt="Logo" width="100" height="100">
+
+<br/>
+
+<img align="center" src="Images/Screenshot2.png" alt="Logo" width="100" height="100">
+
+<br/>
+
 
 <!-- ROADMAP -->
 ## Roadmap

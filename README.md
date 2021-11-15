@@ -29,7 +29,7 @@
 <p align="center">
   <a href="https://india-vs-covid.web.app/">
     <img align="center" src="Images/Logo.png" alt="Logo" width="100" height="100">
-    <h2 align="center">COVID-19 & World</h2>
+    <h2 align="center">COVID-19 Statistics</h2>
     <h3 align="center">----------------------------------------</h3>
   </a>
   <p align="center">
@@ -37,9 +37,9 @@
     <br />
     <a href="https://youtu.be/BTZSivNDwPM">View Demo</a>
     ·
-    <a href="https://github.com/rwishavg/COVID-19-and-India/issues">Report Bug</a>
+    <a href="https://github.com/rwishavg/CovStats/issues">Report Bug</a>
     ·
-    <a href="https://github.com/rwishavg/COVID-19-and-India/issues">Request Feature</a>
+    <a href="https://github.com/rwishavg/CovStats/issues">Request Feature</a>
   </p>
 </p>
 
@@ -166,10 +166,9 @@ Distributed under the MIT License. See [LICENSE](https://github.com/rwishavg/COV
 <!-- CONTACT -->
 ## Contributors
 
-[Ved Prakash Dubey](https://www.linkedin.com/in/ved-prakash-dubey-swash/) - Linkedin
+[Rwishav Ghosh](https://rwishavg.github.io/portfolio/) [Web Development]
 
-[Rwishav Ghosh](https://rwishavg.github.io/portfolio/) - Portfolio
-
+[Ved Prakash Dubey](https://www.linkedin.com/in/ved-prakash-dubey-swash/) [Data Science and Machine Learning]
 
 
 <!-- ACKNOWLEDGEMENTS -->
